@@ -27,15 +27,14 @@ st.subheader(f"Prompt {prompt_idx+1}: {row['title']} ({row['domain']})")
 st.markdown(f"**Prompt Text:**\n\n{row['prompt']}")
 
 # === Display Instructions ===
-col1, col2, col3 = st.columns(3)
-col1.subheader("🔷 GNN Instructions")
-col1.code(row['gnn_instructions'], language='markdown')
+with st.expander("🔷 GNN Instructions", expanded=True):
+    st.markdown(row['gnn_instructions'])
 
-col2.subheader("🔶 MCTS Instructions")
-col2.code(row['mcts_instructions'], language='markdown')
+with st.expander("🔶 MCTS Instructions", expanded=True):
+    st.markdown(row['mcts_instructions'])
 
-col3.subheader("🟢 Reasoning Model")
-col3.code(row['rmodel_instructions'], language='markdown')
+with st.expander("🟢 Reasoning Model Instructions", expanded=True):
+    st.markdown(row['rmodel_instructions'])
 
 # === Evaluation Form ===
 st.markdown("### ✍️ Rate Each Approach")
