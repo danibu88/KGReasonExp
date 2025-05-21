@@ -43,10 +43,10 @@ st.markdown("### ✍️ Rate Each Approach")
 def rating_block(label_prefix):
     st.markdown(f"#### {label_prefix.upper()}")
     return {
-        f"{label_prefix}_user": st.slider("User Alignment", 1, 5, 3, key=f"{label_prefix}_user"),
-        f"{label_prefix}_clarity": st.slider("Clarity", 1, 5, 3, key=f"{label_prefix}_clarity"),
-        f"{label_prefix}_action": st.slider("Actionability", 1, 5, 3, key=f"{label_prefix}_action"),
-        f"{label_prefix}_usefulness": st.slider("Usefulness", 1, 5, 3, key=f"{label_prefix}_usefulness")
+        f"{label_prefix}_user": st.slider("User Alignment", 1, 5, 3, key=f"{label_prefix}_user_slider"),
+        f"{label_prefix}_clarity": st.slider("Clarity", 1, 5, 3, key=f"{label_prefix}_clarity_slider"),
+        f"{label_prefix}_action": st.slider("Actionability", 1, 5, 3, key=f"{label_prefix}_action_slider"),
+        f"{label_prefix}_usefulness": st.slider("Usefulness", 1, 5, 3, key=f"{label_prefix}_usefulness_slider")
     }
 
 st.markdown("Rate on a scale of 1 (poor) to 5 (excellent).")
