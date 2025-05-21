@@ -40,13 +40,13 @@ def render_instructions(title, instructions_text):
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    render_instructions("🔷 GNN Instructions", row['gnn_instructions'])
+    render_instructions("🔷 Approach 1", row['gnn_instructions'])
 
 with col2:
-    render_instructions("🔶 MCTS Instructions", row['mcts_instructions'])
+    render_instructions("🔶 Approach 2", row['mcts_instructions'])
 
 with col3:
-    render_instructions("🟢 Reasoning Model", row['rmodel_instructions'])
+    render_instructions("🟢 Approach 3", row['rmodel_instructions'])
 
 # === Evaluation Form ===
 st.markdown("### ✍️ Rate Each Approach")
