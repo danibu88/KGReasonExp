@@ -26,15 +26,26 @@ row = df.iloc[prompt_idx]
 st.subheader(f"Prompt {prompt_idx+1}: {row['title']} ({row['domain']})")
 st.markdown(f"**Prompt Text:**\n\n{row['prompt']}")
 
+def render_instructions(title, instructions_text):
+    st.markdown(f"### {title}")
+    for line in instructions_text.split("\n"):
+        line = line.strip()
+        if line.startswith("INSTRUCTION"):
+            st.markdown(f"- **{line}**")
+        elif line:
+            st.markdown(f"&nbsp;&nbsp;&nbsp;&nbsp;{line}")  # small indent for overflow lines
+
 # === Display Instructions ===
-with st.expander("🔷 GNN Instructions", expanded=True):
-    st.markdown(row['gnn_instructions'])
+col1, col2, col3 = st.columns(3)
 
-with st.expander("🔶 MCTS Instructions", expanded=True):
-    st.markdown(row['mcts_instructions'])
+with col1:
+    render_instructions("🔷 GNN Instructions", row['gnn_instructions'])
 
-with st.expander("🟢 Reasoning Model Instructions", expanded=True):
-    st.markdown(row['rmodel_instructions'])
+with col2:
+    render_instructions("🔶 MCTS Instructions", row['mcts_instructions'])
+
+with col3:
+    render_instructions("🟢 Reasoning Model", row['rmodel_instructions'])
 
 # === Evaluation Form ===
 st.markdown("### ✍️ Rate Each Approach")
