@@ -3,6 +3,7 @@ import pandas as pd
 import gspread
 from datetime import datetime
 from oauth2client.service_account import ServiceAccountCredentials
+from promptlist import evaluation_prompts
 
 # === Streamlit Page Config ===
 st.set_page_config(page_title="Instruction Evaluation", layout="wide")
@@ -23,8 +24,8 @@ prompt_idx = st.number_input("Select Prompt #", 0, len(df) - 1, 0)
 row = df.iloc[prompt_idx]
 
 # === Display Prompt ===
-st.subheader(f"Prompt {prompt_idx+1}: {row['title']} ({row['domain']})")
-st.markdown(f"**Prompt Text:**\n\n{row['prompt']}")
+with st.expander("🔎 Full Prompt Text", expanded=True):
+    st.markdown(evaluation_prompts[prompt_idx]["prompt"])
 
 def render_instructions(title, instructions_text):
     st.markdown(f"### {title}")
