@@ -2,151 +2,169 @@ evaluation_prompts = [
     {
         "domain": "Healthcare",
         "title": "AI MedBox for Elderly",
-        "prompt": "At SimpleHealth, we've identified a groundbreaking opportunity to revolutionize elderly care..."
+        "prompt": (
+            "At SimpleHealth, we've identified a groundbreaking opportunity to revolutionize elderly care with our AI-powered MedBox concept. "
+            "This device reminds seniors to take their medications and uses AI to analyze health data and make informed suggestions about treatment plans. "
+            "It verifies medication intake, automatically reorders supplies, and even flags potential drug interactions. "
+            "The system integrates with healthcare providers to adjust prescriptions in real time and offers visual and voice interfaces for accessibility. "
+            "Family members can receive alerts and updates, giving them peace of mind while ensuring independence for the elderly. "
+            "This AI health assistant goes beyond medication management—it's a personalized care platform. "
+            "We believe MedBox can reduce hospital readmissions, improve treatment adherence, and create a smarter healthcare ecosystem for seniors."
+        )
     },
     {
         "domain": "Risk Management",
         "title": "AI Safety System for Sawmills",
-        "prompt": "At SafetyFirst Lumber, we've uncovered a game-changing opportunity to revolutionize safety in sawmills..."
+        "prompt": (
+            "At SafetyFirst Lumber, we are developing a real-time safety system that continuously monitors sawmill operations. "
+            "Our AI analyzes vibration, load, and usage patterns from machinery sensors to detect early warning signs of equipment failure. "
+            "The system autonomously adjusts cleaning and maintenance schedules based on predicted risk zones. "
+            "It not only alerts staff to danger but offers preventive recommendations. "
+            "This transforms safety from reactive to proactive. "
+            "By minimizing downtime and reducing accidents, the AI enables a safer, more efficient work environment. "
+            "It can set new industry standards for intelligent risk mitigation in hazardous manufacturing contexts."
+        )
     },
     {
         "domain": "Education",
         "title": "Personalized AI Tutor",
-        "prompt": "At FutureLearn Academy, we aim to deploy an AI-based tutor that adapts to each student's learning pace, style, and performance..."
+        "prompt": (
+            "At FutureLearn Academy, we aim to redefine student engagement with a personalized AI tutor. "
+            "This virtual tutor adapts to each student’s pace, preferences, and learning gaps using real-time performance analytics. "
+            "It can reframe explanations, suggest targeted exercises, and integrate interactive content such as quizzes and simulations. "
+            "For teachers, it provides dashboards that highlight which students need support and which topics are underperforming. "
+            "Parents receive insights into learning progress and study habits. "
+            "The tutor is available 24/7 across devices, ensuring that learning doesn't stop outside the classroom. "
+            "We see this as a way to bridge educational inequality and increase learner confidence through continuous, personalized support."
+        )
     },
     {
         "domain": "Retail",
         "title": "AI-Driven Dynamic Pricing",
-        "prompt": "At ShopSmart, we're rolling out a real-time pricing engine powered by AI that adjusts product prices based on competitor data, inventory, and demand..."
+        "prompt": (
+            "At ShopSmart, we are launching a dynamic pricing engine that reacts in real time to market changes. "
+            "The AI system tracks competitor pricing, customer demand patterns, and inventory levels to suggest optimal price points. "
+            "It can run A/B tests and optimize for metrics like conversion rate or profit margin. "
+            "The system is designed to support multiple pricing strategies based on product categories and customer segments. "
+            "With explainable AI dashboards, retailers can understand and trust the recommendations. "
+            "This engine empowers both e-commerce and brick-and-mortar operations to stay competitive and agile in fast-moving markets."
+        )
     },
     {
         "domain": "Manufacturing",
         "title": "Predictive Quality Control",
-        "prompt": "At ProFabTech, we're developing an AI model that analyzes image and sensor data during production to predict defects before they happen..."
+        "prompt": (
+            "ProFabTech is building an AI model that detects defects before they happen. "
+            "Using real-time sensor and camera data, the system monitors variables such as temperature, vibration, and assembly alignment. "
+            "It applies anomaly detection models to predict failures or product defects before they reach the end of the line. "
+            "Operators receive alerts and root-cause analysis, enabling rapid correction. "
+            "The system can also recommend design changes to reduce recurring defect types. "
+            "This transforms quality assurance from reactive checks to proactive intelligence, potentially reducing waste and improving consistency."
+        )
     },
     {
         "domain": "Finance",
         "title": "Fraud Detection System",
-        "prompt": "At TrustBank, we’re deploying an AI system that continuously scans transactional data for anomalous behavior patterns in real time..."
+        "prompt": (
+            "At TrustBank, we’re deploying a fraud detection engine that learns behavioral patterns from millions of transactions. "
+            "It flags suspicious activities like sudden changes in location, unusual spending, or duplicate transactions. "
+            "Using machine learning, the system continuously refines its models and reduces false positives. "
+            "It also explains why a transaction is flagged, offering transparency for review teams. "
+            "Integration with mobile apps allows real-time alerts and verification requests to customers. "
+            "The goal is to protect users without disrupting legitimate activity—making security seamless and intelligent."
+        )
     },
     {
         "domain": "Logistics",
         "title": "Smart Fleet Optimization",
-        "prompt": "FleetMove is building an AI system that plans vehicle routes dynamically using live traffic, weather, and fuel efficiency predictions..."
+        "prompt": (
+            "FleetMove is building an AI-powered fleet optimizer that reroutes vehicles in real time. "
+            "The system factors in traffic, weather, vehicle type, and delivery urgency to suggest the most efficient route. "
+            "It learns from historical data to predict traffic patterns and anticipate delays. "
+            "Drivers receive dynamic instructions via mobile devices, and dispatchers have a live dashboard for oversight. "
+            "Fuel usage, emissions, and delivery time are tracked and optimized. "
+            "This solution aims to reduce operational costs and carbon footprint while improving on-time delivery performance."
+        )
     },
     {
         "domain": "Agriculture",
         "title": "Precision Farming AI",
-        "prompt": "AgriEdge is introducing an AI model that analyzes satellite data, weather forecasts, and soil sensors to optimize watering and harvesting schedules..."
+        "prompt": (
+            "At AgriEdge, we’re introducing a smart farming assistant that uses AI to recommend crop treatments. "
+            "By integrating satellite imagery, soil sensors, and weather data, the system identifies when and where to irrigate, fertilize, or treat for pests. "
+            "It provides mobile alerts to farmers and integrates with machinery to automate some actions. "
+            "Crop yield forecasts help in planning logistics and sales. "
+            "Over time, the AI learns farm-specific conditions and improves its accuracy. "
+            "This leads to more sustainable, resource-efficient farming with higher productivity."
+        )
     },
     {
         "domain": "Cybersecurity",
         "title": "Autonomous Threat Detection",
-        "prompt": "At SafeNet, we're using AI to automatically identify, classify, and isolate network intrusions within milliseconds of detection..."
+        "prompt": (
+            "At SafeNet, we’re implementing a cybersecurity AI that detects and responds to network threats autonomously. "
+            "It uses pattern recognition to identify anomalies in traffic, login behavior, or API calls. "
+            "When a breach is suspected, it can isolate systems, block IPs, and notify admins immediately. "
+            "The system learns from emerging threats to keep ahead of zero-day vulnerabilities. "
+            "A real-time dashboard offers visibility into system health and ongoing attacks. "
+            "This AI acts as both guard and investigator, offering round-the-clock protection without human fatigue."
+        )
     },
     {
         "domain": "Legal",
         "title": "Contract Risk Analyzer",
-        "prompt": "At LawBotics, we’re building an AI agent that flags ambiguous or risky clauses in contracts using NLP and legal knowledge graphs..."
+        "prompt": (
+            "At LawBotics, we’re designing an AI system to scan legal documents for high-risk clauses. "
+            "The system uses NLP and legal domain models to flag vague, biased, or non-compliant sections in contracts. "
+            "It suggests alternative phrasings and highlights missing mandatory terms. "
+            "Lawyers can review the output and approve edits via a simple interface. "
+            "It supports various contract types from NDAs to procurement and licensing agreements. "
+            "This tool will save time, reduce litigation risk, and ensure regulatory compliance for firms of all sizes."
+        )
     },
     {
         "domain": "Construction",
         "title": "Site Safety Intelligence",
-        "prompt": "ConstructAI is creating a vision-based system that detects safety violations in real time on construction sites using drone and camera feeds..."
+        "prompt": (
+            "ConstructAI is developing a real-time visual safety monitor for construction sites. "
+            "Using drone and CCTV feeds, the AI identifies workers not wearing PPE, unsafe scaffold usage, and other hazards. "
+            "It sends live alerts to site managers and logs incidents with video evidence. "
+            "The system tracks safety trends over time and can suggest changes to protocols or training. "
+            "With multilingual support, it improves communication with international teams. "
+            "This technology ensures compliance and actively prevents workplace injuries."
+        )
     },
     {
         "domain": "Hospitality",
         "title": "AI Concierge Assistant",
-        "prompt": "At LuxeStay, we are developing an AI-powered concierge that can anticipate guest needs and personalize room services and experiences..."
+        "prompt": (
+            "At LuxeStay, we are designing an AI-powered concierge that learns guest preferences across multiple visits. "
+            "The assistant handles restaurant reservations, service requests, and amenity recommendations in real time. "
+            "It adjusts its tone and suggestions based on guest type—business, family, or luxury traveler. "
+            "Staff can use the same system for internal coordination, improving service delivery. "
+            "This AI not only enhances guest experience but also drives loyalty and operational efficiency."
+        )
     },
     {
         "domain": "Telecom",
         "title": "Network Outage Prediction",
-        "prompt": "NetWatch is building a machine learning model that uses network telemetry to predict service degradation before users are impacted..."
+        "prompt": (
+            "NetWatch is developing a predictive analytics tool for telcos to prevent outages. "
+            "The AI models analyze switch logs, signal strength patterns, and user complaints to detect early degradation. "
+            "It recommends preemptive rerouting or technician dispatches to avoid customer impact. "
+            "Downtime is minimized and SLAs are better maintained. "
+            "This innovation could dramatically improve service reliability in densely connected urban zones."
+        )
     },
     {
         "domain": "Energy",
         "title": "Smart Grid Balancing",
-        "prompt": "At Voltix, we use AI to forecast renewable energy production and dynamically balance power loads across the grid to prevent blackouts..."
-    },
-    {
-        "domain": "Insurance",
-        "title": "Claim Automation Bot",
-        "prompt": "At RapidClaim, we're rolling out an AI assistant that automatically processes low-risk insurance claims using user-submitted images and forms..."
-    },
-    {
-        "domain": "Smart Cities",
-        "title": "AI-Driven Traffic Flow",
-        "prompt": "CityVision is building an AI engine that adjusts traffic light timing in real-time based on congestion patterns and accident detection..."
-    },
-    {
-        "domain": "Media",
-        "title": "AI Story Generator",
-        "prompt": "At NewsNow, we’re prototyping a storytelling AI that drafts news summaries and headlines personalized for each reader’s profile..."
-    },
-    {
-        "domain": "E-commerce",
-        "title": "Visual Search Assistant",
-        "prompt": "LookFinder is developing an AI system that lets customers search for products by uploading images, matching them against inventory in milliseconds..."
-    },
-    {
-        "domain": "Environment",
-        "title": "Wildfire Prediction System",
-        "prompt": "At TerraSafe, we’re integrating AI with satellite data and climate models to forecast wildfire risk zones days before ignition..."
-    },
-    {
-        "domain": "Public Safety",
-        "title": "AI Crime Forecasting",
-        "prompt": "SafeStreets is working on a predictive policing tool that analyzes social signals, reports, and event density to allocate patrol resources effectively..."
-    },
-    {
-        "domain": "Fashion",
-        "title": "AI Trend Forecaster",
-        "prompt": "At StyleGen, we’re building a generative model that analyzes global fashion posts, influencer tags, and retail signals to predict emerging trends..."
-    },
-    {
-        "domain": "Gaming",
-        "title": "Adaptive NPC Behavior",
-        "prompt": "GameForge is building AI agents that evolve their strategies and personalities dynamically based on player behavior in RPG environments..."
-    },
-    {
-        "domain": "Tourism",
-        "title": "AI Travel Companion",
-        "prompt": "WanderAI is designing an intelligent itinerary builder that suggests travel plans based on interests, budget, and global events..."
-    },
-    {
-        "domain": "Food Industry",
-        "title": "Smart Kitchen Assistant",
-        "prompt": "KitchenAI is developing a device that monitors fridge contents and suggests recipes while learning dietary preferences over time..."
-    },
-    {
-        "domain": "HR",
-        "title": "Bias-Aware Hiring Assistant",
-        "prompt": "HireRight is training a model that screens resumes for fit while identifying and mitigating unconscious bias in selection..."
-    },
-    {
-        "domain": "Space",
-        "title": "Satellite Failure Prediction",
-        "prompt": "At OrbitalOps, we use machine learning to monitor satellite telemetry for early warning signs of component failure in orbit..."
-    },
-    {
-        "domain": "Sports",
-        "title": "Injury Prevention AI",
-        "prompt": "AthletiCore is designing a biomechanical model that analyzes motion data to identify high-risk movements in training routines..."
-    },
-    {
-        "domain": "Transportation",
-        "title": "Autonomous Traffic Inspector",
-        "prompt": "At MoveSafe, we’re testing AI drones that monitor road compliance and identify accident-prone zones in real time..."
-    },
-    {
-        "domain": "Entertainment",
-        "title": "AI Casting Director",
-        "prompt": "CastAI is building a system that recommends actors for film roles based on scripts, genre, and past audience feedback..."
-    },
-    {
-        "domain": "Mental Health",
-        "title": "Emotion-Aware Chatbot",
-        "prompt": "MindMate is developing an AI therapist that adapts tone, pacing, and guidance based on real-time sentiment analysis of user input..."
+        "prompt": (
+            "At Voltix, we are leveraging AI to balance energy demand and supply in smart grids. "
+            "The system forecasts solar and wind generation and adjusts load allocation in real time. "
+            "It can also incentivize usage shifts through dynamic pricing models. "
+            "Outages are avoided, and renewable penetration is maximized. "
+            "This is a foundational technology for the next generation of clean, reliable energy infrastructure."
+        )
     }
 ]
