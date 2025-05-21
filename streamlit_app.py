@@ -62,9 +62,9 @@ def rating_block(label_prefix):
 
 st.markdown("Rate on a scale of 1 (poor) to 5 (excellent).")
 
-gnn_scores = rating_block("gnn")
-mcts_scores = rating_block("mcts")
-rmodel_scores = rating_block("rmodel")
+gnn_scores = rating_block("Approach1")
+mcts_scores = rating_block("Approach2")
+rmodel_scores = rating_block("Approach3")
 
 # === Submit Button ===
 evaluator_id = st.text_input("Your name or initials (required)", "")
